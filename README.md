@@ -6,6 +6,12 @@ First, we can calculate the probability that there are _**no**_ repeating birthd
 
 $P(\text{no repeating birthdays}) = P(A)$
 
+How do we calculate that? Well, if there were 3 people, the first person could have any birthday, i.e $\frac{365}{365}$, the second person could have any day, minus the previous, i.e $\frac{365 - 1}{365}$, the third person would therefor have $\frac{365 - 2}{365}$.
+
+If we multiple those together, we get the probability of none of the 3 people sharing a birthday.
+
+To find the chance that someone does share a birthday, we want the opposite of that, or the $compliment$.
+
 $P(A) = \frac{(365 - 0) \cdot (365 - 1) \cdot (365 - 2)}{365^3}$
 
 Since:
@@ -28,3 +34,5 @@ Therefor, the probability that of 4 people selected at random, at least one birt
 **NOTE**: $P(365,3)$, also known as $Permutation$, is given as:
 
 $P(n, k) = n\cdot (n-1)\cdot (n-2) ... (n-k+1) = \frac{n!}{(n-k)!}$
+
+### A birthday occurs $x$ times
