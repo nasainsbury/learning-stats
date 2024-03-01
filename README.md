@@ -23,7 +23,7 @@ In the example above, that gives:
 
 $1 - \frac{P(365,3)}{365^3} \approx 1-0.983644 \approx 0.016 \approx 1.6\\%$
 
-Therefor, the probability that of 4 people selected at random, at least one birthday is shared is $1.6\%$
+Therefor, the probability that of 4 people selected at random, at least one birthday is shared is $1.6\\%$
 
 **NOTE**: $P(365,3)$, also known as $Permutation$, is given as:
 
