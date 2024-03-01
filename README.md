@@ -4,7 +4,7 @@ Suppose three people are in a room. What is the probability that at least two pe
 
 First, we can calculate the probability that there are _**no**_ repeating birthdays:
 
-$ P(\text{no repeating birthdays}) = P(A) $
+$P(\text{no repeating birthdays}) = P(A)$
 
 $ P(A) = \frac{(365 - 0) \cdot (365 - 1) \cdot (365 - 2)}{365^3} $
 
