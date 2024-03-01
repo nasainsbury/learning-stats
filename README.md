@@ -6,22 +6,22 @@ First, we can calculate the probability that there are _**no**_ repeating birthd
 
 $P(\text{no repeating birthdays}) = P(A)$
 
-$ P(A) = \frac{(365 - 0) \cdot (365 - 1) \cdot (365 - 2)}{365^3} $
+$P(A) = \frac{(365 - 0) \cdot (365 - 1) \cdot (365 - 2)}{365^3}$
 
 Since:
-$ (365 - 0) \cdot (365 - 1) \cdot (365 - 2) = P(n,r) $
+$(365 - 0) \cdot (365 - 1) \cdot (365 - 2) = P(n,r)$
 
 Then the formula can be simplified to:
 
-$ P(A) = \frac{P(365,3)}{365^n} $
+$P(A) = \frac{P(365,3)}{365^n}$
 
 Therefor, the probability that a birthday does repeat is:
 
-$ P(repetition) = 1 - P(A)$
+$P(repetition) = 1 - P(A)$
 
 In the example above, that gives:
 
-$ 1 - \frac{P(365,3)}{365^3} \approx 1-0.983644 \approx 0.016 \approx 1.6\%$
+$1 - \frac{P(365,3)}{365^3} \approx 1-0.983644 \approx 0.016 \approx 1.6\%$
 
 Therefor, the probability that of 4 people selected at random, at least one birthday is shared is $1.6\%$
 
