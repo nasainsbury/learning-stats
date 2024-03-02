@@ -10,7 +10,6 @@ How do we calculate that? Well, if there were 3 people, the first person could h
 
 If we multiple those together, we get the probability of none of the 3 people sharing a birthday.
 
-To find the chance that someone does share a birthday, we want the opposite of that, or the $compliment$.
 
 $P(A) = \frac{(365 - 0) \cdot (365 - 1) \cdot (365 - 2)}{365^3}$
 
@@ -21,7 +20,7 @@ Then the formula can be simplified to:
 
 $P(A) = \frac{P(365,3)}{365^n}$
 
-Therefor, the probability that a birthday does repeat is:
+To find the chance that someone does share a birthday, we want the opposite of that, or the $compliment$.
 
 $P(repetition) = 1 - P(A)$
 
