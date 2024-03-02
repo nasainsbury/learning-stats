@@ -1,3 +1,21 @@
+## Cominbations
+
+Combinations can be written as $n\choose r$, where $n$ respresents the total number of items in the set, and $r$ is the number of items you want to choose.
+
+Suppose you have 4 colours, $red$, $green$, $blue$ and $yellow$. From the set we want to pick 2 of those colours. The following combinations could be written as:
+
+- $red$ and $green$
+- $red$ and $blue$
+- $red$ and $yellow$
+- $blue$ and $yellow$
+- $blue$ and $green$
+- $yellow$ and $green$
+
+In the above example, we'd say that $4\space chooses \space 2$, or $4\choose2$.
+
+To caulcate this value we can do:
+$\frac{n!}{r!\cdot (n-r)!}$
+
 ## Birthday Problem
 
 Suppose three people are in a room. What is the probability that at least two people share a birthday?
@@ -9,7 +27,6 @@ $P(\text{no repeating birthdays}) = P(A)$
 How do we calculate that? Well, if there were 3 people, the first person could have any birthday, i.e $\frac{365}{365}$, the second person could have any day, minus the previous, i.e $\frac{365 - 1}{365}$, the third person would therefor have $\frac{365 - 2}{365}$.
 
 If we multiple those together, we get the probability of none of the 3 people sharing a birthday.
-
 
 $P(A) = \frac{(365 - 0) \cdot (365 - 1) \cdot (365 - 2)}{365^3}$
 
