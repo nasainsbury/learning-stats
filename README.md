@@ -1,5 +1,7 @@
 ## Cominbations
 
+Combinations count the number of ways to choose a certain number of items from a larger set without considering the order in which they are chosen.
+
 Combinations can be written as $n\choose r$, where $n$ respresents the total number of items in the set, and $r$ is the number of items you want to choose.
 
 Suppose you have 4 colours, $red$, $green$, $blue$ and $yellow$. From the set we want to pick 2 of those colours. The following combinations could be written as:
