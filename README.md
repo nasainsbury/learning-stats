@@ -53,4 +53,20 @@ Therefor, the probability that of 4 people selected at random, at least one birt
 
 $P(n, k) = n\cdot (n-1)\cdot (n-2) ... (n-k+1) = \frac{n!}{(n-k)!}$
 
-### A birthday occurs $x$ times
+### A birthday occurs $x$ times (INGORE!!)
+
+The probability $P(x,n)$, that $x$ or more people share a birthday among $n$ can be calculated using the complementary probability approach. We first calculate the probability $Q(x,n)$ that fewer than $x$ people share a birthday among $n$ people, and then subtract 1.
+
+Let's denote the probability that exactly $x$ people ahre a birthday among $n$ people as $R(x,n)$. Then $Q(x,n)$ is the sum of the probabilities of $R(x,n)$ from $x=0$ to $x=x-1$, i.e,
+
+$Q(x,n) = \sum_{k=0}^{x-1}R(k,n)$
+
+The probability $R(x,n)$ that exactly $x$ people share a birthday among $n$ people can be calulcated using:
+
+$R(x,n) = \frac{{n\choose x}\cdot(365-x+1)^n}{365^n}$
+
+So suppose, we want to calculate, in a room of 40 people, at least 3 people share a birthday, we would do:
+
+The probability $R(40,3)$ that exactly $3$ people share a birthday among $40$ people can be calulcated using:
+
+$R(40,3) = \frac{{40\choose 3}\cdot326^3}{365^3} = \frac{9880\cdot(326)^3}{365^3} = $
