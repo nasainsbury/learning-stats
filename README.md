@@ -53,20 +53,31 @@ Therefor, the probability that of 4 people selected at random, at least one birt
 
 $P(n, k) = n\cdot (n-1)\cdot (n-2) ... (n-k+1) = \frac{n!}{(n-k)!}$
 
-### A birthday occurs $x$ times (INGORE!!)
+## The Newton–Pepys problem
 
-The probability $P(x,n)$, that $x$ or more people share a birthday among $n$ can be calculated using the complementary probability approach. We first calculate the probability $Q(x,n)$ that fewer than $x$ people share a birthday among $n$ people, and then subtract 1.
+Suppose you have a fair dice with 6 sides, consider the following events:
 
-Let's denote the probability that exactly $x$ people ahre a birthday among $n$ people as $R(x,n)$. Then $Q(x,n)$ is the sum of the probabilities of $R(x,n)$ from $x=0$ to $x=x-1$, i.e,
+$A$: A dice is tossed $6$ times, what is the likelihood that at least _**one**_ $6$ appears.
 
-$Q(x,n) = \sum_{k=0}^{x-1}R(k,n)$
+$B$: A dice is tossed $12$ times, what is the likelihood that at least _**two**_ $6$'s' appears.
 
-The probability $R(x,n)$ that exactly $x$ people share a birthday among $n$ people can be calulcated using:
+$C$: A dice is tossed $16$ times, what is the likelihood that at least _**three**_ $6$'s appears.
 
-$R(x,n) = \frac{{n\choose x}\cdot(365-x+1)^n}{365^n}$
+$P(A)$ can be calculated by finding the complement of the likelihood that none of the throws are $6$, $1 - (\frac{5}{6})^6$.
 
-So suppose, we want to calculate, in a room of 40 people, at least 3 people share a birthday, we would do:
+$P(A) = 1 - (\frac{5}{6})^6 \approx 0.6651$.
 
-The probability $R(40,3)$ that exactly $3$ people share a birthday among $40$ people can be calulcated using:
+$P(B)$ can be calculated with the following information:
 
-$R(40,3) = \frac{{40\choose 3}\cdot326^3}{365^3} = \frac{9880\cdot(326)^3}{365^3} = $
+- $P(no\space6)$: no $6$ appears within $12$ dice as $(\frac{5}{6})^{12}$
+- $P(one\space6)$: the probability that only _**one**_ $6$ appears as ${12\choose1}\cdot(\frac{1}{6})\cdot(\frac{5}{6})^{11}$. The reason for multiply by ${12\choose1}$ is that there are $12$ occurances where the $6$ could occur.
+
+$P(B)$ can then be calculated as $1 - (P(no\space6) + P(one\space6))\approx 0.6187$.
+
+$P(C)$ can the be summaries to be equal to: $1 - (P(no\space6) + P(one\space6) + P(two\space6))$.
+
+In summary, the formula for this can be _simplified_ to:
+
+$1 - \sum_{x=0}^{k}{6k\choose x}\cdot(\frac{1}{6})^{x}\cdot(\frac{5}{6})^{6k-x}$, where $k$ represents the number of groups.
+
+Essentially, what we are doing in summing the probabilities that $n$ number of $6$'s occur from $n=0$.
