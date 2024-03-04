@@ -81,3 +81,5 @@ In summary, the formula for this can be _simplified_ to:
 $1 - \sum_{x=0}^{k} {6k\choose x}\cdot(\frac{1}{6})^{x}\cdot(\frac{5}{6})^{6k-x}$, where $k$ represents the number of groups.
 
 Essentially, what we are doing in summing the probabilities that $n$ number of $6$'s occur from $n=0$.
+
+$1 - \sum_{x=0}^{k}$
